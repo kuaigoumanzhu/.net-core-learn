@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "coreSelfAuth", "coreSelfAuth", "{61850936-DF49-4238-8E6C-6828D0CDE3E3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcCookieAuth", "MvcCookieAuth\MvcCookieAuth.csproj", "{923FF931-AAF7-47CF-96FD-34B5EF73BCB8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jwtAuthSample", "jwtAuthSample\jwtAuthSample.csproj", "{B4A8242B-C7AB-4527-9A32-F46CAB849FC0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "权限管理", "权限管理", "{F3F5D291-97F7-4D91-9FC8-2AE9338B9A5F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RolePrivilegeManagement", "权限管理\RolePrivilegeManagement\RolePrivilegeManagement.csproj", "{162F63AE-F1B4-48CF-BD0B-51DFEE919A5A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivilegeManagement", "PrivilegeManagement\PrivilegeManagement.csproj", "{B3895FBC-D286-4622-876D-95D12EA9AC36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolicyPrivilegeManagement", "PolicyPrivilegeManagement\PolicyPrivilegeManagement.csproj", "{87F0DD00-0701-4204-BE80-6D37F154BE93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{923FF931-AAF7-47CF-96FD-34B5EF73BCB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{923FF931-AAF7-47CF-96FD-34B5EF73BCB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{923FF931-AAF7-47CF-96FD-34B5EF73BCB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{923FF931-AAF7-47CF-96FD-34B5EF73BCB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4A8242B-C7AB-4527-9A32-F46CAB849FC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4A8242B-C7AB-4527-9A32-F46CAB849FC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4A8242B-C7AB-4527-9A32-F46CAB849FC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4A8242B-C7AB-4527-9A32-F46CAB849FC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{162F63AE-F1B4-48CF-BD0B-51DFEE919A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{162F63AE-F1B4-48CF-BD0B-51DFEE919A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{162F63AE-F1B4-48CF-BD0B-51DFEE919A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{162F63AE-F1B4-48CF-BD0B-51DFEE919A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3895FBC-D286-4622-876D-95D12EA9AC36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3895FBC-D286-4622-876D-95D12EA9AC36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3895FBC-D286-4622-876D-95D12EA9AC36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3895FBC-D286-4622-876D-95D12EA9AC36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87F0DD00-0701-4204-BE80-6D37F154BE93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87F0DD00-0701-4204-BE80-6D37F154BE93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87F0DD00-0701-4204-BE80-6D37F154BE93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87F0DD00-0701-4204-BE80-6D37F154BE93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{923FF931-AAF7-47CF-96FD-34B5EF73BCB8} = {61850936-DF49-4238-8E6C-6828D0CDE3E3}
+		{B4A8242B-C7AB-4527-9A32-F46CAB849FC0} = {61850936-DF49-4238-8E6C-6828D0CDE3E3}
+		{162F63AE-F1B4-48CF-BD0B-51DFEE919A5A} = {F3F5D291-97F7-4D91-9FC8-2AE9338B9A5F}
+		{B3895FBC-D286-4622-876D-95D12EA9AC36} = {F3F5D291-97F7-4D91-9FC8-2AE9338B9A5F}
+		{87F0DD00-0701-4204-BE80-6D37F154BE93} = {F3F5D291-97F7-4D91-9FC8-2AE9338B9A5F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DDFFA84-25F8-44AE-A986-D48238E2DF4D}
+	EndGlobalSection
+EndGlobal
