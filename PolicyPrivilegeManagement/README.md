@@ -1,0 +1,6 @@
+﻿1、可以通过其他方式授权：可以通过角色组，用户名，生日等，但这些主要取决于ClaimTypes，
+	我们也可以自定义键值来授权，这些统一叫策略授权，其中更强大的是，我们可以自定义授权Handler来达到灵活授权
+
+	基于角色组，或用户名，或基于ClaimType或自定义键值等授权策略，这些都是通过Services.AddAuthorization添加
+	并且是AuthorizationOptions来AddPolicy，这里策略的名称统一用RequireClaim来命名，不同的请求的策略名称各不相同
+	户名时就用policy.RequireUserName()，同时，在登录时，验证成功后，要添加相应的Claim到ClaimsIdentity中
