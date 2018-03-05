@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System.Security.Claims;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,9 +19,16 @@ namespace PolicyPrivilegeManagement
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            //授权
             services.AddAuthorization(options=> {
                 //基于角色组的策略
                 options.AddPolicy("RequireClaim",policy=>policy.RequireRole("admin","system"));
+                //基于用户名
+                options.AddPolicy("RequireClaim",policy=>policy.RequireUserName("aaa"));
+                //基于ClaimType
+                options.AddPolicy("RequireClaim",policy=>policy.RequireClaim(ClaimTypes.Country,"中国"));
+                //自定义
+                options.AddPolicy("RequireClaim",policy=>policy.RequireClaim("customer","test"));
             });
         }
 
